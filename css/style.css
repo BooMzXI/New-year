@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-feature-settings: "smcp", "zero";
+}
+.container {
+    width: auto;
+    height: 100vh;
+    /*background: url(Img/christmas-zoom-background-4.jpeg);*/
+    position: relative;
+}
+/*.gift {
+    width: auto;
+    z-index: 0;
+    height: auto;
+    overflow: hidden;
+    margin: 20px;
+}
+.gift li {
+    position: absolute;
+    display: block;
+    animation: animate 5s infinite;
+    z-index: 1;
+}
+.gift li #gift-2 {
+    width: 100px;
+    height: 100px;
+}
+#gift-1 {
+    width: 100px;
+    height: 100px;
+}*/
+.menu {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 80px;
+    background: black;
+    /*border-bottom: 1px solid black;*/
+    position: relative;
+    z-index: 1;
+}
+.tools {
+    width: 600px;
+    height: 90px;
+    /*background: green;*/
+}
+li {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+li.nav-bar{
+    width: 500px;
+}
+button {
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+button.nav {
+    font-feature-settings: "smcp", "zero";
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button.nav:hover {
+    background: white;
+    color: black;
+    transition: color 0.5s ease;
+}
+.light {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    display: flex;
+}
+.item {
+    margin: 0 20px 20px 20px;
+    width: 100px;
+    height: 200px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    z-index: 0;
+}
+.item-1 {
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background: black;
+}
+.item-rope-1 {
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    background: black; 
+}
+.item-rope-2 {
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background: black;
+}
+.item-rope-3 {
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    background: black;
+}
+.item-rope-4 {
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 80px;
+    background: black;
+}
+.item-rope-5 {
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 110px;
+    background: black;
+}
+.item-rope-6 {
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 40px;
+    background: black;
+}
+.circles {
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+}
+#circles-1 {
+    margin-top: 50px;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+}
+#circles-2 {
+    margin-top: 70px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+}
+#circles-3 {
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50%;
+}
+#circles-4{
+    margin-top: 80px;
+    width: 70px;
+    height: 70px;
+    background: red;
+    border-radius: 50%;
+}
+#circles-5{
+    margin-top: 110px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+}
+#circles-6{
+    margin-top: 40px;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+}
+.NewY-text {
+    width: 100%;
+    height: 400px;
+    background: transparent;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text {
+    width: 1000px;
+    height: 400px;
+    /*background: red;*/
+    display: inline-block;
+    line-height: 150px; 
+    text-align: center;
+    font-size: 60px;
+    z-index: 1;
+    opacity: 1;
+    animation: animation-opacity 2s ease;
+
+}
+#play-button {
+    width: 100%;
+    height: 80px;
+    /*background: red;*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;  
+    animation: animation-opacity 2s ease;
+}
+.play {
+    width: 200px;
+    height: 50px;
+    background: #ece7e6;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-feature-settings: "smcp", "zero";
+}
+.play:hover {
+    background: black;
+    border: 1px solid white;
+    color: white;
+}
+
+@keyframes animation-opacity {
+    0% {
+        opacity: 0;
+        transition: opacity 2s ease;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media (max-width: 600px) {
+    li.nav-bar {
+        width: 400px;
+    }
+    .light {
+        width: 90%;
+    }
+    #temp1{
+        display: none;
+    }
+    #temp2{
+        display: none;
+    }
+    #temp3 {
+        display: none;
+    }
+    #temp4 {
+        display: none;
+    }
+    #item3 {
+        display: none;
+    }
+    #item4 {
+        display: none;
+    }
+    #item5 {
+        display: none;
+    }
+    #item6{
+        display: none;
+    }
+    .text {
+        margin-top: 150px;
+        font-size: 30px;
+        line-height: 100px;
+    }
+}
+.line {
+    width: auto;
+    height: 2px;
+    background: black;
+    margin: 0 20px 50px 20px;
+}
+
+/*********************Pray Page*************************/
+.text-explain {
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    /*background: red;*/
+    justify-content: start;
+    font-size: 30px;
+    margin: 120px 0 0 20px;
+}
+.text-explain h2 {
+    z-index: 1;
+}
+.icon {
+    margin: 5px 0 0 5px;
+    display: flex;
+    z-index: 1;
+}
+.icon:hover + #question-hover,
+#question-hover:hover {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+#question-hover {
+    border-radius: 20px;
+    border: 1px solid black;
+    display: none;
+    padding: 5px;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    font-size: 25px;
+    width: 300px;
+    height: 100px;
+    margin-left: 5px;
+    opacity: 0;
+    pointer-events: none;
+}
+.prayBox {
+    width: auto;
+    height: 500px;
+    margin-top: 15px;
+    /*background: pink;*/
+    display: flex;
+    justify-content: center;
+}
+.inpBox {
+    width: 50%;
+    height: 400px;
+    /*background: green;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.headLine {
+    width: 800px;
+    height: 20px;
+    background: black;
+    border-radius: 20px;
+    z-index: 1;
+}
+.textWrite {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    background: rgb(250, 25, 25);
+    z-index: 0;
+    border: 2px solid black;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    animation: animation-textWrite 2s ease;
+}
+.letPray-text {
+    width: 150px;
+    height: 200px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.all-text {
+    font-size: 20px;
+    padding: 10px;
+    width: 500px;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: start;
+    border: none;
+    margin: 10px;
+    animation: all-text 2s ease;
+}
+.confirm {
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: color 0.5s ease;
+}
+.confirm:hover {
+    background: black;
+    border: 1px solid white;
+    color: white;
+    transition: color 0.5s ease;
+}
+.seeText {
+    width: auto;
+    height: 600px;
+    /*background: burlywood;*/
+    margin: 10px 20px 0 20px;
+    padding: 20px;
+}
+#text-pic{
+    font-size: 50px;
+}
+.pic {
+    width: auto;
+    height: 400px;
+    background: #D2CDCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 20px;
+}
+.frame {
+    width: 300px;
+    height: 300px;
+    background: white;
+    margin: 40px;
+    border-radius: 20px;
+}
+.pic .frame img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+}
+.pic button {
+    border: none;
+}
+
+@keyframes animation-textWrite {
+    0% {
+        height: 0px;
+        transition: height 2s ease;
+    }
+    100% {
+        height: 400px;
+    }
+}
+@keyframes animation-all-text {
+    0% {
+        height: 0px;
+        transition: height 2s ease;
+    }
+    100% {
+        height: 200px;
+    }
+}
+
+
