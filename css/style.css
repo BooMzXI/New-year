@@ -92,7 +92,7 @@ button.nav:hover {
     margin: 0 20px 20px 20px;
     width: 100px;
     height: 200px;
-    background: white;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: top;
@@ -510,3 +510,74 @@ button.nav:hover {
     }
 }
 
+/**********************Contact Page*****************/
+.contact-text {
+    width: 100%;
+    height: 100px;
+    /*background: red;*/
+    margin-top: 150px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    padding: 20px;
+}
+.contact-frame {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-frame_2 {
+    width: 90%;
+    height: 400px;
+    background: rgb(211, 211, 211);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 50px;
+}
+.contact-data {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 400px;
+    height: 300px;
+    background: white;
+    margin: 50px;
+    padding: 25px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 25px;
+}
+#contact-img_1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#contact-img_2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.button_bar {
+    width: 100%;
+    height: 50px;
+    /*background: black;*/
+    text-decoration: none;
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    color: black;
+}
+.button_bar a {
+    margin: 10px;
+}
+a i.fa-brands {
+    color: black;
+}
+.Iconexplain-text p {
+    font-size: 20px;
+}

@@ -18,5 +18,3 @@ Array.from(circles).forEach(circle => {
 playButton.addEventListener('click', () => {
     window.location.href = "chat.html";
 });
-
-
