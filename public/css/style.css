@@ -527,6 +527,7 @@ button.nav:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: animation-contact-frame 2s ease;
 }
 .contact-frame_2 {
     width: 90%;
@@ -580,4 +581,74 @@ a i.fa-brands {
 }
 .Iconexplain-text p {
     font-size: 20px;
+}
+@keyframes animation-contact-frame {
+    0% {
+        height: 600px;
+        transition: height 2s ease;
+        opacity: 0;
+    }
+    100% {
+        height: 500px;
+        opacity: 1;
+    }
+}
+@media (max-width: 820px) {
+    .contact-data {
+        font-size: 25px;
+        width: 300px;
+        height: 400px;
+    }
+    #contact-img_1 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    #contact-img_2 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .contact-frame_2 {
+        display: inline-block;
+        height: 1000px;
+    }
+    .contact-frame {
+        margin-top: 300px;
+    }
+}
+@media (max-width: 1180px) {
+    .contact-data {
+        font-size: 20px;
+        height: 350px;
+    }
+}
+@media (max-width: 500px) {
+    .contact-frame_2 {
+        width: 100%;
+        height: 1300px;
+    }
+    .contact-data {
+        width: 250px;
+    }
+    #contact-img_1 {
+        margin-left: 30%;
+    }
+    .contact-frame {
+        margin-top: 400px;
+    }
+    .menu {
+        width: 100%;
+        align-items: start;
+        justify-content: start;
+    }
+    .tools {
+        width: 100px;
+    }
+    li.nav-bar {
+        width: 100px;
+    }
+    li {
+        justify-content: start;
+    }
 }
