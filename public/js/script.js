@@ -22,3 +22,16 @@ playButton.addEventListener('click', () => {
 function redirectTo(page) {
     window.location.href = page;
 }
+
+function toggleMenu() {
+    var menuContent = document.getElementById("all-button");
+    
+    if (menuContent.style.display === "none" || menuContent.style.display === "") {
+        menuContent.style.display = "block";
+    } else {
+        menuContent.style.display = "none";
+    }
+}
+
+
+

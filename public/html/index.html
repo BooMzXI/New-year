@@ -10,6 +10,19 @@
 <body>
     <div class="container">
         <div class="menu">
+            
+            <div class="nav-frame">
+                <div class="nav-button" id="nav-Btns">
+                    <button id="menu-button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <div id="all-button">
+                    <button class="nav-for-phone" id="Home-button" onclick="redirectTo('index.html')">Home</button>
+                    <button class="nav-for-phone" id="Contact-button" onclick="redirectTo('contact.html')">Contact</button>
+                    <button class="nav-for-phone" id="About-button" onclick="redirectTo('about.html')">About</button>
+                    <button class="nav-for-phone" id="Countdown-button" onclick="redirectTo('countdown.html')">Countdown</button>
+                </div>
+            </div>
+
             <div class="tools">
                 <li class="nav-bar">
                     <button class="nav" id="Home-button" onclick="redirectTo('index.html')">Home</button>
