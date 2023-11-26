@@ -9,7 +9,7 @@ function countdown() {
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
   
     const countdownElement = document.getElementById('countdown');
-    countdownElement.innerHTML = `Time until New Year's Day:<br>${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+    countdownElement.innerHTML = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
   }
   setInterval(countdown, 1000);
   countdown();

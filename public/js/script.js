@@ -26,6 +26,16 @@ function redirectTo(page) {
     window.location.href = page;
 }
 
+function exitButton(){
+    var showText = document.getElementById("show-text-random");
+    showText.style.display = 'none';
+}
+function openMsgPanel() {
+    var showText = document.getElementById("show-text-random");
+    showText.style.display = 'flex';
+}
+
+
 function toggleMenu() {
     var menuContent = document.getElementById("all-button");
     if (menuContent.style.display === "none" || menuContent.style.display === "") {
