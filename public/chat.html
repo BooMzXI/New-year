@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/009230d963.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rqDz0AgxNMDL7u3T8tNvPZkFsfAVLzchzHvrjN3R8f+k5B4L78o1Bq1XaQ3fl5or" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+
     <title>New Year!!</title>
 </head>
 <body>
     <div class="container">
         <div class="menu">
-            
+
             <div class="nav-frame">
                 <div class="nav-button" id="nav-Btns">
                     <button id="menu-button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
@@ -33,7 +34,6 @@
                 </li>
             </div>
         </div>
-         
 
         <div class="light">
             <div class="item">
@@ -77,53 +77,46 @@
             </div>
 
         </div>
-        
-        <div class="contact-text">
-            <h1>Contact us</h1>
-        </div>
-        <div class="contact-frame">
-            <div class="contact-frame_2">
-                <img src="../img/Banky.jpg" alt="" id="contact-img_1">
-                <div class="contact-data">
-                    <p><i class="fa-brands fa-facebook"></i> Facebook:Thanabadee Techakasiwattana (Banky)</p>
-                    <p><i class="fa-brands fa-instagram"></i> IG:iam.banky</p>
-                    <p><i class="fa-brands fa-github"></i> Github:BankTNBD</p>
-                    <p><i class="fa-brands fa-square-x-twitter"></i> X:CallMeBanky</p>
-                    <div class="Iconexplain-text">
-                        <p>Click on the icon below for speed</p>
-                    </div>
-                    <div class="button_bar">
-                        <a href="https://www.facebook.com/IamBanky"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/iam.banky/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/BankTNBD"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://twitter.com/CallMeBanky"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    </div>
-                </div>
 
-                <img src="../img/Bummi.jpg" alt="" id="contact-img_1">
-                <div class="contact-data">
-                    <p><i class="fa-brands fa-facebook"></i> Facebook:Patipon pongsawat</p>
-                    <p><i class="fa-brands fa-instagram"></i> IG:Patiix06</p>
-                    <p><i class="fa-brands fa-github"></i> Github:BooMzXI</p>
-                    <p><i class="fa-brands fa-square-x-twitter"></i> X:BIz_Xiz</p>
-                    <div class="Iconexplain-text">
-                        <br>
-                        <p>Click on the icon below for speed</p>
-                        <div class="button_bar">
-                            <a href="https://www.facebook.com/profile.php?id=100031681724544"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/patii0x/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://github.com/BooMzXI"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://twitter.com/BIz_Xiz"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        </div>
+
+        <div class="text-explain">
+            <h2>What is this?<h3 class="icon"><i class="fa-regular fa-circle-question"></i></h3></h2>
+            <h3 id="question-hover">You can write something here and see what others have written</h3>
+        </div>
+
+        <div class="prayBox">
+            <div class="inpBox">
+                <div class="headLine"></div>
+                <div class="textWrite">
+                    <div class="text_inside_textWrite">
+                        <h2><i class="fa-regular fa-envelope"></i></h2>
                     </div>
+                    <input type="text" class="all-text" id="msg" placeholder="Write Something...">
+                    <button class="confirm" onclick="writeMsg()">Confirm</button>
                 </div>
             </div>
         </div>
 
+        <div class="seeText">
+            <h2 id="text-pic">Randomly look at what other people have written</h2>
+            <div class="pic">
+                <button class="frame">
+                    <img src="./img/Doc.png" alt="">
+                </button>
+                <button class="frame" id="img1">
+                    <img src="./img/Doc.png" alt="">
+                </button>
+                <button class="frame" id="img2">
+                    <img src="./img/Doc.png" alt="">
+                </button>
+            </div>
+            <div class="line"></div>
+        </div>
+        
 
     </div>
 
 
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

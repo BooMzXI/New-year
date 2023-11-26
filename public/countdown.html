@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/009230d963.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rqDz0AgxNMDL7u3T8tNvPZkFsfAVLzchzHvrjN3R8f+k5B4L78o1Bq1XaQ3fl5or" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>New Year!!</title>
 </head>
 <body>
     <div class="container">
+
         <div class="menu">
-            
+
             <div class="nav-frame">
                 <div class="nav-button" id="nav-Btns">
                     <button id="menu-button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
@@ -32,7 +34,7 @@
                 </li>
             </div>
         </div>
-         
+
         <div class="light">
             <div class="item">
                 <div class="item-1"></div>
@@ -75,19 +77,18 @@
             </div>
 
         </div>
-        <div class="NewY-text">
-            <div class="text">
-                <h1>HAPPY <br>NEW YEAR!</h1>
+
+        <div class="Cd-text">Countdown</div>
+        <div class="Cd-frame">
+            <div class="Cd-data-frame">
+                <div id="countdown"></div>
             </div>
         </div>
-        <div id="play-button">
-            <button class="play">Write something!</button>
-        </div>  
+
     </div>
 
-    <div class="line"></div>
 
-
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/countdown.js"></script>
 </body>
 </html>
