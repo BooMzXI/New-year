@@ -1,16 +1,32 @@
+let dayBox = document.getElementById("day-box");
+let hrBox = document.getElementById("hr-box");
+let minBox = document.getElementById("min-box");
+let secBox = document.getElementById("sec-box");
+let endDate = new Date(2024, 0, 1, 0, 0);
+let endTime = endDate.getTime();
 function countdown() {
-    const now = new Date();
-    const newYear = new Date(now.getFullYear() + 1, 0, 1);
-  
-    const timeRemaining = newYear - now;
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-  
-    const countdownElement = document.getElementById('countdown');
-    countdownElement.innerHTML = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+  let todayDate = new Date();
+  let todayTime = todayDate.getTime();
+  let remainingTime = endTime - todayTime;
+  let oneMin = 60 * 1000;
+  let oneHr = 60 * oneMin;
+  let oneDay = 24 * oneHr;
+  let addZeroes = (num) => (num < 10 ? `0${num}` : num);
+  if (endTime < todayTime) {
+    clearInterval(i);
+    document.querySelector(
+      ".countdown"
+    ).innerHTML = `<h1>Countdown Has Expired</h1>`;
+  } else {
+    let daysLeft = Math.floor(remainingTime / oneDay);
+    let hrsLeft = Math.floor((remainingTime % oneDay) / oneHr);
+    let minsLeft = Math.floor((remainingTime % oneHr) / oneMin);
+    let secsLeft = Math.floor((remainingTime % oneMin) / 1000);
+    dayBox.textContent = addZeroes(daysLeft);
+    hrBox.textContent = addZeroes(hrsLeft);
+    minBox.textContent = addZeroes(minsLeft);
+    secBox.textContent = addZeroes(secsLeft);
   }
-  setInterval(countdown, 1000);
-  countdown();
-  
+}
+let i = setInterval(countdown, 1000);
+countdown();
