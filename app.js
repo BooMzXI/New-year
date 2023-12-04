@@ -31,7 +31,7 @@ app.post("/write", (req, res) => {
 });
 
 app.get("/read/:id", (req, res) => {
-    let file = require(`${req.params.id}.json`);
+    let file = require(`./data/${req.params.id}.json`);
     res.json(file);
     res.end();
 });
