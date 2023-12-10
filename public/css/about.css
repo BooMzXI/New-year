@@ -24,3 +24,11 @@
     margin-top: 20px;
     font-size: 18px;
 }
+@media (max-width: 800px) {
+    #item5 {
+        display: none;
+    }
+    #item6 {
+        display: none;
+    }
+}

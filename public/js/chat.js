@@ -11,6 +11,9 @@ let msgList = [1,2,3];
 randMsg();
 
 function writeMsg() {
+    let successMsg = document.getElementById("success-animation");
+    successMsg.style.display = 'block';
+
     fetch(server + "/write", {
         method: "POST",
         body: JSON.stringify({
@@ -21,6 +24,10 @@ function writeMsg() {
         }
     })
     msg.value = "";
+    
+    setTimeout(function() {
+        location.reload();
+    }, 3000);
 }
 
 function readMsg() {

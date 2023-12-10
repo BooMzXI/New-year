@@ -75,8 +75,18 @@ a i.fa-brands {
     font-size: 20px;
 }
 @media (max-width: 800px) {
+    #item5 {
+        display: none;
+    }
+    #item6 {
+        display: none;
+    }
+    .contact-frame {
+        height: 1000px;
+    }
     .contact-frame_2 {
       flex-direction: column;
+      height: 900px;
     }
     .person {
         flex-direction: column;
@@ -84,4 +94,28 @@ a i.fa-brands {
     .contact-data {
         width: auto;
     }
+  }
+  @media (max-width: 600px) {
+    .nav-frame {
+        display: block;
+    }
+    .nav-button {
+        display: block;
+    }
+    #all-button {
+        display: none;
+    }
+    .contact-frame {
+        height: 400px;
+    }
+    .contact-frame_2 {
+        flex-direction: column;
+        height: 1100px;
+        width: 500px;
+      }
+      .person {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
   }
